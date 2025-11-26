@@ -1,12 +1,9 @@
-
 def descifra_sustitucion(cadena, llave):
-    print(cadena)
-    print(llave)
-    alfabeto = 'abcdefghilmnopqrstuvxy'
+    alfabeto = 'abcdefghilmnopqrstuvxy' # 22 letras
     cifrado =  ''
     cadena = cadena.lower()    
     for letra in cadena:
-        if letra in alfabeto:
+        if letra in llave: 
             pos = llave.lower().index(letra)
             cifrado += alfabeto[pos]
         else:
@@ -17,12 +14,7 @@ alfabeto = 'abcdefghilmnopqrstuvxy'
 cifrado ="J'zcikmg gyp jg lcfwp eg j'zcikmgc ezfr, fk icbcg hfw iuuicpwgkp if mgkcg Awpcfy eg ji lidwjjg Cfpiagiy. Eg yi azduzywpwzk kfpcwpwzkkgjjg, yg ewypwkmfg yi liwbjg oijgfc gkgcmgpwhfg, mciag i yi lzcpg pgkgfc gk gif gp yi cwangyyg gk owpidwkg A, gk iaweg lzjwhfg gp gk dwkgcifr azddg jg uzpiyywfd, jg dimkgywfd gp jg aijawfd, hfw yzkp i ugwkg ibyzcbgy uic j'zcmikwydg. Wj azkpwgkp egy hfikpwpgy iuucgawibjgy eg bgpi-aiczpgkg, cgyuzkyibjg eg yi azfjgfc ptuwhfg gp azkkf uzfc ygy uczucwgpgy ikpwzrteikpgy ; Gk ujfy egy iawegy dijwhfg, zrijwhfg, picpcwhfg gp awpcwhfg, ag egckwgc cgklzcag j'iapwzk eg ji owpidwkg A. Ji hfikpwpg eg lwbcgy gyp iuucgawibjg gp yg pczfog ucwkawuijgdgkp eiky ji uicpwg bjikang gkpcg ji ufjug gp j'gazcag, yi azkyzddipwzk liozcwyg ezka jg pcikywp wkpgypwkij. Ji owpidwkg A uicpwawug i ji lzcdipwzk ef azjjimgkg, egy zy gp egy egkpy, egy mjzbfjgy czfmgy gp liozcwyg j'ibyzcupwzk ef lgc egy ijwdgkpy gp ji cgywypikag ifr wklgapwzky."
 llave    = 'ibaeglmnwjdkzuhcypfort'
 
-
-
-
 print(descifra_sustitucion(cifrado, llave))
-#Salida
-#once upon a time there was a lovely princess. but she had an enchantment upon her of a fearful sort which could only be broken by love.
 '''
 def carga_dic(nombre):
     arch = open(nombre, 'r')
